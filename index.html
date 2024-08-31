@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>음식 메뉴 추천</title>
+<!-- Bootstrap CSS 링크 추가 -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <script type="text/javascript" src="script.js"></script>
+  <div class="container mt-5">
+    <div class="jumbotron text-center">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">음식 메뉴 추천</h1>
+      <p class="lead">원하는 특징을 선택하고 음식 메뉴를 추천받아보세요!</p>
+    <table>
+      <tr>
+        <th>특징 선택</th>
+          <!-- 각 그룹을 레이블 그룹으로 묶습니다 -->
+          <td id="feature">
+            <label class="custom-label" data-feature="전체" onclick="toggleLabelGroup(this, 'feature')">전체</label><br>
+            <label class="custom-label" data-feature="식사" onclick="toggleLabelGroup(this, 'feature')">식사</label><br>
+            <label class="custom-label" data-feature="요리" onclick="toggleLabelGroup(this, 'feature')">요리</label><br>
+            <label class="custom-label" data-feature="간식" onclick="toggleLabelGroup(this, 'feature')">간식</label><br>
+          </td>
+          <td id="otherperson">
+            <label class="custom-label" data-feature="전체" onclick="toggleLabelGroup(this, 'otherperson')">전체</label><br>
+            <label class="custom-label" data-feature="혼밥" onclick="toggleLabelGroup(this, 'otherperson')">혼밥</label><br>
+            <label class="custom-label" data-feature="친구" onclick="toggleLabelGroup(this, 'otherperson')">친구</label><br>
+            <label class="custom-label" data-feature="가족" onclick="toggleLabelGroup(this, 'otherperson')">가족</label><br>
+            <label class="custom-label" data-feature="연인" onclick="toggleLabelGroup(this, 'otherperson')">연인</label><br>
+            <label class="custom-label" data-feature="회식" onclick="toggleLabelGroup(this, 'otherperson')">회식</label><br>
+          </td>
+          <td id="country">
+            <label class="custom-label" data-feature="전체" onclick="toggleLabelGroup(this, 'country')">전체</label><br>
+            <label class="custom-label" data-feature="한식" onclick="toggleLabelGroup(this, 'country')">한식</label><br>
+            <label class="custom-label" data-feature="중식" onclick="toggleLabelGroup(this, 'country')">중식</label><br>
+            <label class="custom-label" data-feature="일식" onclick="toggleLabelGroup(this, 'country')">일식</label><br>
+            <label class="custom-label" data-feature="양식" onclick="toggleLabelGroup(this, 'country')">양식</label><br>
+            <label class="custom-label" data-feature="아시아" onclick="toggleLabelGroup(this, 'country')">아시아</label><br>
+          </td>
+
+        </tr>
+      </table><br>
+    <button class="btn btn-primary btn-lg" onclick="recommendMenu()">메뉴 추천 받기</button>
+    </div>
+    <div class="text-center">
+      <h2>추천된 메뉴</h2>
+      <p id="recommended-menu" class="display-4"></p>
+    </div>
+  </div>
+  <!-- Bootstrap JS 및 jQuery 추가 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

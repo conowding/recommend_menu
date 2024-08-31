@@ -1,0 +1,183 @@
+body {
+    background-image: url('your-background-image-url.jpg'); /* 배경 이미지 URL을 여기에 넣으세요 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white; /* 텍스트 색상을 조정하여 가독성을 높일 수 있습니다. */
+}
+
+.jumbotron {
+background-color: rgba(0, 0, 0, 0.5); /* 절반 정도의 투명한 검은색 배경을 부여합니다. */
+padding: 20px;
+}
+
+body {
+margin: 0; /* 기본 바디의 마진을 제거하여 전체 화면을 사용합니다. */
+padding: 0;
+background-color: #f7f7f7; /* 외부 컨테이너의 배경 색상을 설정합니다. */
+font-family: Arial, sans-serif;
+}
+
+.container {
+background-color: rgba(255, 255, 255, 0.9); /* 내부 컨테이너의 배경 색상을 설정합니다. */
+border-radius: 10px;
+padding: 20px;
+margin: 50px auto; /* 외부 컨테이너의 중앙 정렬을 위해 마진을 조정합니다. */
+max-width: 700px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* 그림자 효과를 추가합니다. */
+}
+
+.selectBox {
+    position: relative;
+    width: 150px;
+    height: 35px;
+    border-radius: 4px;
+    border: 2px solid lightcoral;
+}
+.selectBox .select {
+width: inherit;
+height: inherit;
+background: transparent;
+border: 0 none;
+outline: 0 none;
+padding: 0 5px;
+position: relative;
+z-index: 3;
+}
+.selectBox .select option {
+background: lightcoral;
+color: #0dad9248;
+padding: 3px 0;
+font-size: 16px;
+}
+.selectBox .icoArrow {
+position: absolute; 
+top: 0; 
+right: 0; 
+z-index: 1; 
+width: 35px; 
+height: inherit;
+border-left: 2px solid lightcoral;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.selectBox .icoArrow img {
+width: 50%;
+transition: .3s;
+}
+
+.selectBox .select:focus + .icoArrow img {
+transform: rotate(180deg);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #2dad0d;
+  }
+
+th, td {
+padding: 10px;
+text-align: center;
+border: 1px solid #2dad0d;
+}
+
+/* 기존 스타일 유지하면서 라벨 커스텀 */
+td label {
+  display: block;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #2dad0d;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+td label:hover {
+  background-color: #2dad0d;
+  color: white; /* 커서를 올렸을 때 텍스트 색상 변경 */
+}
+
+td label input {
+  margin-right: 5px;
+}
+
+/* 추가적인 커스텀 스타일 */
+td label.selected {
+  background-color: #2dad0d;
+  color: white;
+}
+
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+.feature {
+margin-right: 10px;
+margin-bottom: 10px;
+padding: 5px 10px;
+background-color: #f2f2f2;
+border: 1px solid #ccc;
+border-radius: 5px;
+cursor: pointer;
+display: flex;
+align-items: center;
+}
+
+.feature-text {
+margin-right: 5px;
+font-size: 14px;
+}
+
+/* 기존 스타일 유지하면서 input 요소 숨기기 */
+td label input[type="radio"] {
+  display: none;
+}
+
+/* 라벨이 선택되었을 때의 스타일 변경 */
+td label input[type="radio"]:checked + span {
+  background-color: #2dad0d; /* 선택되었을 때의 배경색 */
+  color: white; /* 선택되었을 때의 텍스트 색상 */
+  border-radius: 5px; /* 선택되었을 때의 모서리 둥글기 설정 */
+}
+
+/* 라벨의 호버 시의 스타일 변경 */
+td label span:hover {
+  background-color: #b2bbb0;
+  color: white;
+  cursor: pointer;
+}
+
+/* 선택된 라벨의 스타일 변경 */
+td label.selected span {
+  background-color: #2dad0d;
+  color: white;
+  border-radius: 5px;
+}
+
+.custom-label {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #2dad0d;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-label:hover {
+  background-color: #2dad0d;
+  color: white;
+}
+
+.custom-label.selected {
+  background-color: #2dad0d;
+  color: white;
+}
+
+
